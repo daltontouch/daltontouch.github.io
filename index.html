@@ -13,45 +13,64 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
+  <nav class="site-bar" aria-label="Site">
+    <a class="site-bar-name" href="#">Dalton Touchberry</a>
+    <a class="site-bar-mail" href="mailto:daltontouch@gmail.com">daltontouch@gmail.com</a>
+  </nav>
+
   <header class="hero wrap">
     <p class="kicker">Dalton Touchberry</p>
     <h1>I help small businesses replace paper and spreadsheets with software their customers actually use.</h1>
     <p class="lede">Georgia Tech CS. I design the ordering, intake, and back-office tools that let a small shop run like it has an ops team.</p>
+    <p class="hero-action">
+      <a class="mail-btn" href="mailto:daltontouch@gmail.com">daltontouch@gmail.com</a>
+    </p>
   </header>
 
   <main id="main">
-    <section class="case wrap" aria-labelledby="case-heading">
+    <section class="case" aria-labelledby="case-heading">
       <p class="eyebrow">Featured case</p>
       <h2 id="case-heading">School photography ordering</h2>
-      <p>The studio had run photo day on paper envelopes for 15 years. Parents filled out packages, backdrops, and quantities by hand. Staff retyped every order into the print lab. Peak season meant late nights, misspelled names, and lost forms.</p>
-      <p>I built a parent-facing site so they can order and pay on their phone, plus admin tools that export a clean file the lab can ingest. Same business, no typing pool.</p>
+      <div class="case-grid">
+        <p>The studio had run photo day on paper envelopes for 15 years. Parents filled out packages, backdrops, and quantities by hand. Staff retyped every order into the print lab. Peak season meant late nights, misspelled names, and lost forms.</p>
+        <p>I built a parent-facing site so they can order and pay on their phone, plus admin tools that export a clean file the lab can ingest. Same business, no typing pool.</p>
+      </div>
     </section>
 
     <section class="work wrap" aria-labelledby="work-heading">
-      <h2 id="work-heading">Experience</h2>
+      <h2 class="section-label" id="work-heading">Experience</h2>
       <ul class="roles">
         <li>
           <p class="role">Software Engineer II, GEICO Tech</p>
-          <p>Shipping a live Powersports insurance product in ASP.NET and Angular.</p>
+          <p class="role-copy">Shipping a live Powersports insurance product in ASP.NET and Angular.</p>
         </li>
         <li>
           <p class="role">Software Engineer, Chevron</p>
-          <p>Low-code DevOps. Stood up a .NET Azure Function that became the backend for Power Platform solution deploys, and ran the PR review process around it.</p>
-        </li>
-        <li>
-          <p class="role">B.S. Computer Science, Georgia Institute of Technology</p>
+          <p class="role-copy">Low-code DevOps. Stood up a .NET Azure Function that became the backend for Power Platform solution deploys, and ran the PR review process around it.</p>
         </li>
       </ul>
+      <p class="school">B.S. Computer Science, Georgia Institute of Technology</p>
     </section>
   </main>
 
   <footer class="reach wrap" aria-labelledby="reach-heading">
-    <h2 id="reach-heading">Contact</h2>
+    <h2 class="section-label" id="reach-heading">Contact</h2>
     <ul class="links">
-      <li><a href="mailto:daltontouch@gmail.com">daltontouch@gmail.com</a></li>
-      <li><a href="https://www.linkedin.com/in/dalton-touchberry">LinkedIn</a></li>
-      <li><a href="https://github.com/daltontouch">GitHub</a></li>
+      <li><a class="mail-btn" href="mailto:daltontouch@gmail.com">daltontouch@gmail.com</a></li>
+      <li><a class="quiet-link" href="https://www.linkedin.com/in/dalton-touchberry" aria-label="LinkedIn profile">LinkedIn</a></li>
+      <li><a class="quiet-link" href="https://github.com/daltontouch" aria-label="GitHub profile">GitHub</a></li>
     </ul>
   </footer>
+
+  <script>
+    (function () {
+      var barPoint = 48;
+      var onScroll = function () {
+        document.body.classList.toggle("is-scrolled", window.scrollY > barPoint);
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+    })();
+  </script>
 </body>
 </html>
