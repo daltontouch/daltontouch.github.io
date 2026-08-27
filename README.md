@@ -1,2 +1,1 @@
-# daltontouch.github.io
-Personal site
+Personal site for Dalton Touchberry.
