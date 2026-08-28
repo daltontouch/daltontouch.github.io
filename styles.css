@@ -127,6 +127,27 @@ a:hover {
   padding: 4.5rem 0 3.25rem;
 }
 
+.hero-inner {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.hero-photo {
+  margin: 0;
+  width: 7.75rem;
+  justify-self: start;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-copy .kicker {
+  margin-top: 0;
+}
+
 .hero-action {
   margin: 1.35rem 0 0;
 }
@@ -291,6 +312,24 @@ a:hover {
   .hero {
     padding-top: 6.5rem;
     padding-bottom: 4rem;
+  }
+
+  .hero.wrap {
+    width: min(54rem, calc(100% - 2.5rem));
+    overflow: visible;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr 12rem;
+    gap: 1.75rem 0.75rem;
+    align-items: end;
+  }
+
+  .hero-photo {
+    width: 17.5rem;
+    justify-self: start;
+    margin-bottom: -0.6rem;
+    transform: translateX(-2.6rem);
   }
 
   .case {
