@@ -129,13 +129,13 @@ a:hover {
 
 .hero-inner {
   display: grid;
-  gap: 1.75rem;
-  align-items: start;
+  gap: 1.1rem;
 }
 
 .hero-photo {
   margin: 0;
-  width: min(11rem, 42vw);
+  width: 7.75rem;
+  justify-self: start;
 }
 
 .hero-photo img {
@@ -314,14 +314,22 @@ a:hover {
     padding-bottom: 4rem;
   }
 
+  .hero.wrap {
+    width: min(54rem, calc(100% - 2.5rem));
+    overflow: visible;
+  }
+
   .hero-inner {
-    grid-template-columns: auto 1fr;
-    gap: 2.5rem;
-    align-items: center;
+    grid-template-columns: 1fr 12rem;
+    gap: 1.75rem 0.75rem;
+    align-items: end;
   }
 
   .hero-photo {
-    width: 14rem;
+    width: 17.5rem;
+    justify-self: start;
+    margin-bottom: -0.6rem;
+    transform: translateX(-2.6rem);
   }
 
   .case {
