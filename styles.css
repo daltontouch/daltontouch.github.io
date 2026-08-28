@@ -129,19 +129,24 @@ a:hover {
 
 .hero-inner {
   display: grid;
-  gap: 1.1rem;
+  gap: 1.25rem;
+  align-items: start;
 }
 
 .hero-photo {
   margin: 0;
-  width: 7.75rem;
+  width: 100%;
   justify-self: start;
+  align-self: start;
+  min-width: 0;
 }
 
 .hero-photo img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .hero-copy .kicker {
