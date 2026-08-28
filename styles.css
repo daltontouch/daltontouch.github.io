@@ -5,7 +5,7 @@
   --muted: #5a534b;
   --accent: #c24e1d;
   --accent-text: #9a3810;
-  --accent-on-dark: #e08a55;
+  --accent-on-dark: #ffb184;
   --panel: #171512;
   --panel-copy: #f3efe6;
   --max: 44rem;
@@ -201,9 +201,20 @@ a:hover {
 .case-grid p:last-child {
   margin-top: 0.35rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(243, 239, 230, 0.16);
+  /* border-top: 1px solid rgba(243, 239, 230, 0.16); */
   color: var(--panel-copy);
 }
+
+.case-grid-solution {
+  font-style: italic;
+  color: var(--accent-on-dark);
+}
+
+/* .case-grid > .case-grid-solution:last-child {
+  margin-top: 0.35rem;
+  padding-top: 1rem;
+  /* border-top: 1px solid rgba(243, 239, 230, 0.16); */
+} */
 
 .section-label {
   margin: 0 0 0.65rem;
@@ -346,6 +357,10 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 2rem;
+    margin-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(243, 239, 230, 0.16);
+
   }
 
   .case-grid p:last-child {
